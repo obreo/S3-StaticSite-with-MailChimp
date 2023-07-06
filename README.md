@@ -31,6 +31,7 @@ From the AWS console, search for the API Gateway service - used to create APIs t
 1. Create a Lambda function in AWS with a NodeJS runtime.
 2. From the left sidebar in Lambda, we need to assign a Layer; which is used to add libraries to the code, which is Mailchimp in our case. To do so, refer to the AWS [Documentation](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html). Then install the Mailchimp dependencies using:
 ```
+// nodejs.zip:
 npm install @mailchimp/mailchimp_marketing
 npm install superagent
 ```
